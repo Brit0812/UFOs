@@ -5,5 +5,12 @@
 }
 body {
 
-    color: #f7f7f7;
+    color: #f9f3f3;
   }
+.col-md-4{
+    background-image: url("../images/aliens.jpg");
+    background-size: 100%100%;
+    text-align: left;
+    /* when aligning- left makes it look too stretched out- center looks best
+    --- BUT only when in a small screen in full screen it doesnt make a difference */
+}
