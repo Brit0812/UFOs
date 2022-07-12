@@ -64,7 +64,8 @@ function updateFilters() {
     // matches the filter values
     //use a fat arrow= makes it look neater
     Object.entries(filters).forEach(([key,values])=> {
-      filteredData= filteredData.filter(row => [key]=== values);
+
+      filteredData= filteredData.filter(row => row[key]=== values);
   
     });
   
