@@ -16,9 +16,9 @@ function buildTable(data) {
 
     // Loop through each field in the dataRow and add
     // each value as a table cell (td)
-    Object.values(dataRow).forEach((val) => {
+    Object.values(dataRow).forEach((value) => {
       let cell = row.append("td");
-      cell.text(val);
+      cell.text(value);
     });
   });
 }
@@ -37,7 +37,7 @@ function updateFilters() {
   console.log(changedValue);
     // 4c. Save the id of the filter that was changed as a variable.
   let filterID= changedElement.attr("id");
-  console.log(filterID)
+  console.log(filterID);
   
     // 5. If a filter value was entered then add that filterId and value
     //use the if else statement
